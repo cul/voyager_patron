@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'bundler'
+require 'yaml'
 begin
   Bundler.setup(:default, :development)
 rescue Bundler::BundlerError => e
@@ -7,12 +8,12 @@ rescue Bundler::BundlerError => e
   $stderr.puts "Run `bundle install` to install missing gems"
   exit e.status_code
 end
-require 'test/unit'
-require 'shoulda'
+require 'minitest/autorun'
+
 
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'voyager_patron'
 
-class Test::Unit::TestCase
-end
+SERVER = VoyagerPatron::Server.new(YAML.load_file(File.join(File.dirname(__FILE__), '..', 'config', 'library_credentials.yml')))
+

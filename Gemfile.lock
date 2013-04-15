@@ -1,0 +1,33 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    crack (0.3.2)
+    git (1.2.5)
+    happymapper (0.4.0)
+      libxml-ruby (~> 2.0)
+    httpclient (2.3.3)
+    jeweler (1.8.4)
+      bundler (~> 1.0)
+      git (>= 1.2.5)
+      rake
+      rdoc
+    json (1.7.7)
+    libxml-ruby (2.6.0)
+    minitest (4.7.1)
+    nokogiri (1.5.9)
+    rake (10.0.4)
+    rdoc (3.12.2)
+      json (~> 1.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (> 1.0.0)
+  crack
+  happymapper
+  httpclient
+  jeweler (~> 1.8.4)
+  minitest
+  nokogiri
+  rdoc (> 3.12)

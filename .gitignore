@@ -2,6 +2,37 @@
 coverage
 coverage.data
 
+config/database.yml
+config/app_config.yml
+config/solr.yml
+config/*.sphinx.conf
+config/*_credentials.yml
+config/initializers/computer_specific_config.rb
+*~
+*.cache
+*.log
+*.log.*
+*.pid
+tmp/**/*
+tmp/*
+private/**
+.DS_Store
+db/cstore/**
+db/sphinx/**
+doc/api
+doc/app
+doc/plugins
+doc/*.dot
+jetty/
+coverage/*
+db/*.sqlite3
+*.tmproj
+*.ruby-version*
+*.rvmrc*
+*.sw?
+.sass-cache/**/*
+config/libraries.yml
+
 # rdoc generated
 rdoc
 
